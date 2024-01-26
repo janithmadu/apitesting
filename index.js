@@ -3,12 +3,23 @@ const app = express();
 
 
 app.use(express.json())
-app.use("/app",(req,res)=>{
+app.get("/app",(req,res)=>{
 
     res.status(200).json({
 
         name:"MSDFSD",
         des:"sdfsdfsdfsfddsfsdfsdfsfsfsfsdfsfsfsdfsfsdfsdfsdfdsf"
+
+    })
+
+})
+
+app.get("/test",(req,res)=>{
+
+    res.status(200).json({
+
+        name:"Test",
+        des:"Test"
 
     })
 
